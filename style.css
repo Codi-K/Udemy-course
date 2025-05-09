@@ -1,0 +1,510 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-size: 96px;
+    margin: 64px;
+}
+
+nav{
+    text-align: center;
+    margin-top: 45px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* nav ul a {
+    text-decoration: none;
+} */
+
+nav ul a li{
+    color: #000;
+    /* list-style-type: none; */
+}
+
+#mainnav{
+max-width: 400px;
+margin: 45px auto;
+
+}
+
+#mainnav, #footernav{
+    text-transform: uppercase;
+}
+
+#socialnav ul i{
+    font-size: 32px;
+    color: #000;
+}
+
+.navitem{
+    color: grey;
+}
+
+.navitem.active {
+    /* color: #000; */
+    color: #7224d8;
+    font-weight: 500;
+}
+
+.imgdescription{
+    background-color: #e0c0a9;
+}
+.imgdescription p{
+    color: #333;
+    padding: 32px;
+}
+.imgdescription button{
+    background-color: #000;
+    text-transform: uppercase;
+}
+
+.imgdescription button a{
+    color: #fff;
+}
+
+footer{
+    background: rgba(224, 192, 169, 0.3);
+}
+
+.postimg1{
+    background: url(https://hips.hearstapps.com/hmg-prod/images/2026-ferrari-f80-102-670fcc5ff14d6.jpg?crop=1.00xw:0.846xh;0,0.154xh&resize=1200:*) center no-repeat;
+    height: 213px;
+    width: 320px;
+    background-size: 100%;
+}
+
+.postimg2{
+    background: url(https://hips.hearstapps.com/hmg-prod/images/2022-ferrari-daytona-sp3-133-1659298033.jpg?crop=0.425xw:0.362xh;0.292xw,0.314xh&resize=1200:*) center no-repeat;
+    height: 213px;
+    width: 320px;
+    background-size: 100%;
+}
+
+.postimg3{
+    background: url(https://hips.hearstapps.com/hmg-prod/images/2024-ferrari-sf90-xx-stradale-109-654a668fc71a3.jpg?crop=0.582xw:0.490xh;0.204xw,0.373xh&resize=1200:*) center no-repeat;
+    height: 213px;
+    width: 320px;
+    background-size: 100%;
+}
+
+.postimg4{
+    background: url(https://hips.hearstapps.com/hmg-prod/images/2022-ferrari-296gtb-113-65df9933b43e2.jpg?crop=0.630xw:0.535xh;0.300xw,0.378xh&resize=2048:*) center no-repeat;
+    height: 213px;
+    width: 320px;
+    background-size: 100%;
+}
+
+.postimg5{
+    background: url(https://hips.hearstapps.com/hmg-prod/images/2023-ferrari-roma-101-1667589567.jpg?crop=0.643xw:0.482xh;0.217xw,0.360xh&resize=2048:*) center no-repeat;
+    height: 213px;
+    width: 320px;
+    background-size: 100%;
+}
+
+.postimg6{
+    background: url(https://hips.hearstapps.com/hmg-prod/images/2023-ferrari-sf90-spider-101-1673279831.jpg?crop=0.670xw:0.668xh;0.250xw,0.304xh&resize=2048:*) center no-repeat;
+    height: 213px;
+    width: 320px;
+    background-size: 100%;
+}
+
+.postimg7{
+    background: url(https://cdn.shopify.com/s/files/1/2784/4966/files/ForWeb_0003_11-scuderia-ferrari-2025-test-bahrain-day3_22331d38-0cb1-42ae-a8bb-2b9e96d29fa3_540x.jpg?v=1741174213) center no-repeat;
+    height: 250px;
+    width: 320px;
+    background-size: 100%;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 36px;
+    margin: 72px;
+    text-transform: uppercase;
+  }
+
+.post h4{
+   padding: 24px;
+}
+
+footer{
+    padding: 64px;
+ }
+
+ footer #footernav,footer #socialnav{
+    margin-bottom: 64px;
+ }
+
+ .btn{
+    margin: 64px auto;
+    padding: .75rem 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+ }
+
+ footer p {
+    text-align: center;
+    text-transform: capitalize;
+    word-spacing: 2px;
+    letter-spacing: 3px;
+}
+
+ footer p a{
+    color: #333;
+ }
+
+ .post {
+    width:322px;
+    height: 300px;
+ }
+
+ .container{
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 16px;
+ }
+ 
+ .imgdescription{
+    height: 600px;
+    width: 400px;
+ }
+
+ nav ul a li:hover{
+    color: #000;
+    font-weight: 500;
+ }
+
+ nav ul a li:active{
+    color: #4f4fcf;
+ }
+
+ .post h4:hover{
+    color: #4f4fcf;
+    cursor: pointer;
+ }
+
+ .post h4:active{
+    color: #85ca85;
+    cursor: pointer;
+ }
+
+ .btn:hover{
+    background: lightgray;
+    color: #000;
+    box-shadow: 0 5px 50px 1px rgba(0, 0, 0, 0.3);
+ }
+ .btn:hover a{
+    color: #000;
+ }
+
+#socialnav a:first-child i:hover{
+ color: #c32aa3 ;
+ }
+ #socialnav a:nth-child(2) i:hover{
+    color: red ;
+}
+#socialnav a:nth-child(3) i:hover{
+    color: #2c2929 ;
+}
+#socialnav a:nth-child(4) i:hover{
+    color: #3f4bfd ;
+}
+#socialnav a:last-child i:hover{
+    color: #d11b1b ;
+}
+
+/* .post h4::before{
+    content: "before ";
+}
+.post h4::after{
+    content: " after";
+} */
+
+.post h4:hover::after{
+    content: " ...read more";
+}
+
+/* #mainnav{
+    position: absolute;
+    top:0;
+} */
+
+section{
+    position: relative;
+}
+/* section h2::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 240px;
+    background-color: #000;
+    top: 40px;
+    margin: auto;
+} */
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+#about{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 64px auto;
+}
+.imgdescription{
+    display: flex;
+    flex-direction: column;
+}
+
+.posts{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin: 64px auto;
+}
+
+.post{
+    box-shadow: 0 0 45px 4px rgba(109, 109, 109, 0.3);
+}
+
+
+#podcast h2.subtitle{
+    margin-bottom: 7rem;
+}
+
+.podcastcontainer{
+display: grid;
+grid-template-columns: 400px 200px 300px;
+grid-template-columns: 40% 20vw 1fr;
+grid-template-columns: 2fr 1fr;
+grid-template-columns: 500px 300px;
+grid-template-rows: auto 350px;
+justify-content: center;
+gap: 32px 16px;
+}
+
+.podcastdescription{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.podcastepisodes{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+}
+
+.podcastepisodes h3{
+    margin-bottom: 32px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+#contact h3{
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+form .inputgroup{
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 1rem;
+}
+
+form .inputgroup label{
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+    color: gray;
+ }
+
+ form .inputgroup input{
+    border: none;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.3rem;
+    outline: none;
+ }
+
+ form .inputgroup input:focus{
+    border-bottom: 1px solid #85ca85;
+ }
+ form .inputgroup input::placeholder{
+    color: #000;
+    font-weight: 500;
+ }
+
+ textarea{
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+ }
+
+ label[for="checkbox"]{
+    font-size: 0.8rem;
+ }
+
+ label[for="checkbox"]:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #1877f2;
+}
+
+input[type="submit"]{
+    background-color: rgba(224, 192, 169, 0.3);
+    width: 100%;
+    margin-top: 32px;
+}
+
+.contactinfo li {
+    margin-bottom: 8px;
+}
+
+.contactinfo a{
+    color: #000;
+}
+
+.contactinfo i{
+    color: rgb(224, 192, 169);
+    margin-right: 16px;
+}
+
+#contact{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 32px;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+nav ul a li:hover {
+    color: #000;
+    font-weight: 500;
+    transition: 1s ease-in-out;
+}
+
+nav ul a li {
+    transition: 1s ease-in-out;
+}
+
+.imgdescription button:hover,
+.imgdescription button {
+  transition: all 0.5s ease 0.1s;
+}
+
+
+#about img {
+    -webkit-box-reflect: right 30px
+      linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}
+
+h1 {
+    transform: translate(100px);
+    transform: rotate(-9deg);
+}
+
+.post img:hover {
+    transform: scale(0.5);
+    transition: 0.3s ease;
+}
+
+.post img {
+    transition: 0.3s ease;
+}
+
+.postimg1:hover,.postimg2:hover,.postimg3:hover{
+    background-size: 120%;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+
+.postimg1,.postimg2,.postimg3 {
+    height: 213px;
+    width: 320px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.3s ease;
+}
+
+h1 {
+    animation: title-animation 0.8s ease-in;
+  }
+
+@keyframes title-animation {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@media screen and (max-width: 860px) {
+
+    #about img {
+      display: none;
+    }
+    .imgdescription {
+      background: url(./img/hamilton.jpg) no-repeat center;
+      background-size: 100%;
+    }
+  
+    .imgdescription::before {
+      content: "";
+      position: absolute;
+      background: rgba(224, 192, 169, 0.65);
+      width: 400px;
+      height: 100%;
+      z-index: 1;
+    }
+    .imgdescription p,
+    .imgdescription button {
+      z-index: 2;
+    }
+    .podcastcontainer {
+      grid-template-columns: 400px;
+      text-align: center;
+    }
+  }
+
+@media screen and (min-width: 1200px) {
+
+    .podcastcontainer {
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+    }
+}
+

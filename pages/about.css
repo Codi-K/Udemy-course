@@ -1,0 +1,44 @@
+#about img {
+    filter: grayscale(100%);
+    -webkit-box-reflect: unset;
+    height: fit-content;
+    transition: 0.3s ease;
+  }
+  
+  #about img:hover {
+    filter: grayscale(0%);
+  
+    transition: 0.3s ease;
+  }
+  .imgdescription {
+    background: transparent;
+    height: auto;
+    transition: 0.3s ease;
+  }
+  .imgdescription p {
+    text-align: left;
+    font-size: 1rem;
+    padding: 16px 16px 36px 16px;
+    color: #888;
+  }
+  .imgdescription:hover {
+    background: rgba(224, 192, 169, 0.63);
+    transition: 0.3s ease;
+  }
+  .imgdescription p::selection {
+    color: #000;
+  }
+  @media screen and (max-width: 860px) {
+    #about img {
+      display: block;
+    }
+    #about {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .imgdescription::before {
+      height: unset;
+    }
+  }
+  
